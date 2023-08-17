@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeClienteComponent } from './home-cliente/home-cliente.component';
+import { LoginComponent } from './login/login.component';
+import { AutoCadastroComponent } from './auto-cadastro/auto-cadastro.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeClienteComponent,
+    LoginComponent,
+    AutoCadastroComponent
   ],
   imports: [
     BrowserModule,
