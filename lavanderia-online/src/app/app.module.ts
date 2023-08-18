@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeClienteComponent } from './home-cliente/home-cliente.component';
 import { LoginComponent } from './login/login.component';
 import { AutoCadastroComponent } from './auto-cadastro/auto-cadastro.component';
+import { PedidoOnlineComponent } from './pedido-online/pedido-online.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeClienteComponent,
     LoginComponent,
-    AutoCadastroComponent
+    AutoCadastroComponent,
+    PedidoOnlineComponent
   ],
   imports: [
     BrowserModule,
