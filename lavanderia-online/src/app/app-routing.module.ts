@@ -6,6 +6,7 @@ import {AutoCadastroComponent} from "./auto-cadastro/auto-cadastro.component";
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
+  {path: '', component: LoginComponent},
   {path: 'cadastro', component: AutoCadastroComponent },
   {path: 'home', component: HomeClienteComponent}
 ];
