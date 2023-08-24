@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { PedidoService, Orcamento, Pedido } from '../pedido.service';
+import { PedidoService } from '../pedido/pedido.service';
+import { Orcamento } from '../pedido/pedido.service';
+import { Pedido } from '../pedido/pedido.service';
+
+
 
 @Component({
   selector: 'app-aprovar-pedido',
