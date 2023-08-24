@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }</style>
+<title>Detalhes do Pedido</title>
+</head>
+<body>
+<div class="container">
+  <h2>Detalhes do Pedido</h2>
+  <label for="pedido">Número do Pedido:</label>
+  <input type="text" id="pedido" placeholder="Digite o número do pedido">
+  <button onclick="buscarPedido()">Buscar</button>
+  <div id="detalhes-pedido" style="display: none;">
+    <h3>Detalhes do Pedido</h3>
+    <p><strong>Roupas:</strong> Camiseta, Calça, Blusa</p>
+    <p><strong>Preços:</strong> R$20, R$30, R$25</p>
+    <p><strong>Preço Total:</strong> R$75</p>
+    <p><strong>Prazo do Serviço:</strong> 3 dias úteis</p>
+    <p><strong>Situação:</strong> Em processamento</p>
+  </div>
+</div>
+<script>
+  function buscarPedido() {
+    const pedidoInput = document.getElementById("pedido");
+    const detalhesPedido = document.getElementById("detalhes-pedido");
+
+    // Simulação: substitua este bloco de código com uma chamada a uma API ou consulta a um banco de dados
+    const numeroPedido =8;
+    const roupas = "Camiseta, Calça, Blusa";
+    const precos = "R$20, R$30, R$25";
+    const precoTotal = "R$75";
+    const prazoServico = "3 dias úteis";
+    const situacao = "Em processamento";
+
+    detalhesPedido.innerHTML = `
+      <h3>Detalhes do Pedido</h3>
+      <p><strong>Roupas:</strong> ${roupas}</p>
+      <p><strong>Preços:</strong> ${precos}</p>
+      <p><strong>Preço Total:</strong> ${precoTotal}</p>
+      <p><strong>Prazo do Serviço:</strong> ${prazoServico}</p>
+      <p><strong>Situação:</strong> ${situacao}</p>
+    `;
+
+    detalhesPedido.style.display = "block";
+  }
+</script>
+</body>
+</html>
