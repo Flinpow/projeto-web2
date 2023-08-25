@@ -4,44 +4,90 @@
       <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Bem vindo Cliente</h1>
       <h2 class="sm:text-4xl text-3xl font-small title-font mb-2 text-gray-900">Pedidos</h2>
     </div>
+    <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+      <table class="table-auto w-full text-left whitespace-no-wrap">
+        <thead>
+        <tr>
+          <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">#Nº pedido</th>
+          <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Data</th>
+          <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Valor</th>
+          <th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <tr>
+          <td class="px-4 py-3">1</td>
+          <td class="px-4 py-3">18/08/2023</td>
+          <td class="px-4 py-3">R$30,00</td>
+          <td class="w-10 text-center">
+            <input name="plan" type="radio">
+          </td>
+        </tr>
+        <tr>
+          <td class="border-t-2 border-gray-200 px-4 py-3">2</td>
+          <td class="border-t-2 border-gray-200 px-4 py-3">18/08/2023</td>
+          <td class="border-t-2 border-gray-200 px-4 py-3">R$50,00</td>
+          <td class="border-t-2 border-gray-200 w-10 text-center">
+            <input name="plan" type="radio">
+          </td>
+        </tr>
+        <tr>
+          <td class="border-t-2 border-gray-200 px-4 py-3">3</td>
+          <td class="border-t-2 border-gray-200 px-4 py-3">18/08/2023</td>
+          <td class="border-t-2 border-gray-200 px-4 py-3">R$43,00</td>
+
+          <td class="border-t-2 border-gray-200 w-10 text-center">
+            <input name="plan" type="radio">
+          </td>
+        </tr>
+        <tr>
+          <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">4</td>
+          <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">18/08/2023</td>
+          <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">R$88,00</td>
+          <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
+            <input name="plan" type="radio">
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+      <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded" [routerLink]="['/pagamento']">Pagar</button>
+      <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded" [routerLink]="['/pedido']">Novo pedido</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+
 
     <div class="lg:w-2/3 w-full mx-auto overflow-auto">
       <table class="table-auto w-full text-left whitespace-no-wrap">
         <thead>
           <tr>
-            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">#Pedido</th>
-            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Data</th>
-            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Itens</th>
+
           </tr>
         </thead>
         <tbody>
+
           <tr>
-            <td class="px-4 py-3">1</td>
-            <td class="px-4 py-3">18/08/2023</td>
-            <td class="px-4 py-3">5 camisetas</td>
 
           </tr>
           <tr>
-            <td class="border-t-2 border-gray-200 px-4 py-3">2</td>
-            <td class="border-t-2 border-gray-200 px-4 py-3">18/08/2023</td>
-            <td class="border-t-2 border-gray-200 px-4 py-3">4 calças</td>
-          </tr>
-          <tr>
-            <td class="border-t-2 border-gray-200 px-4 py-3">3</td>
-            <td class="border-t-2 border-gray-200 px-4 py-3">18/08/2023</td>
-            <td class="border-t-2 border-gray-200 px-4 py-3">2 bermudas</td>
 
           </tr>
           <tr>
-            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">4</td>
-            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">18/08/2023</td>
-            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">1 camisa</td>
+
           </tr>
         </tbody>
       </table>
     </div>
     <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
-      <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded" [routerLink]="['/pedido']">Novo pedido</button>
     </div>
   </div>
 </section>
