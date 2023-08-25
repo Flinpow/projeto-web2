@@ -9,6 +9,7 @@ import { AutoCadastroComponent } from './auto-cadastro/auto-cadastro.component';
 import { PedidoOnlineComponent } from './pedido-online/pedido-online.component';
 import { ConsultaPedidoComponent } from './consulta-pedido/consulta-pedido.component';
 import {AprovarOrcamentoPedidoComponent } from "./aprovar-orcamento-pedido/aprovar-orcamento-pedido.component";
+import { ListarPedidosComponent } from './listar-pedidos/listar-pedidos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {AprovarOrcamentoPedidoComponent } from "./aprovar-orcamento-pedido/aprov
     AutoCadastroComponent,
     PedidoOnlineComponent,
     ConsultaPedidoComponent,
-    AprovarOrcamentoPedidoComponent
+    AprovarOrcamentoPedidoComponent,
+    ListarPedidosComponent
   ],
   imports: [
     BrowserModule,
