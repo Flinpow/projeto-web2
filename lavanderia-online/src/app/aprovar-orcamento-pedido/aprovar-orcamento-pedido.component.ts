@@ -7,10 +7,10 @@ import { Pedido } from '../pedido/pedido.service';
 
 @Component({
   selector: 'app-aprovar-pedido',
-  templateUrl: './aprovar-pedido.component.html',
-  styleUrls: ['./aprovar-pedido.component.css']
+  templateUrl: './aprovar-orcamento-pedido.component.html',
+  styleUrls: ['./aprovar-orcamento-pedido.component.css']
 })
-export class AprovarPedidoComponent implements OnInit {
+export class AprovarOrcamentoPedidoComponent implements OnInit {
   orcamento: Orcamento = { valor: 0, prazo: '' };
   pedidoAprovado = false;
   numeroPedido: string | null = null;

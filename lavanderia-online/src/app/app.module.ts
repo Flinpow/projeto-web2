@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { AutoCadastroComponent } from './auto-cadastro/auto-cadastro.component';
 import { PedidoOnlineComponent } from './pedido-online/pedido-online.component';
 import { ConsultaPedidoComponent } from './consulta-pedido/consulta-pedido.component';
+import {AprovarOrcamentoPedidoComponent } from "./aprovar-orcamento-pedido/aprovar-orcamento-pedido.component";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ConsultaPedidoComponent } from './consulta-pedido/consulta-pedido.compo
     LoginComponent,
     AutoCadastroComponent,
     PedidoOnlineComponent,
-    ConsultaPedidoComponent
+    ConsultaPedidoComponent,
+    AprovarOrcamentoPedidoComponent
   ],
   imports: [
     BrowserModule,
