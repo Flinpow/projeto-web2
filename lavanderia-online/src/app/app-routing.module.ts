@@ -6,9 +6,10 @@ import { LoginComponent } from "./login/login.component";
 import { AutoCadastroComponent } from "./auto-cadastro/auto-cadastro.component";
 import { AprovarOrcamentoPedidoComponent } from "./aprovar-orcamento-pedido/aprovar-orcamento-pedido.component";
 import { ConsultaPedidoComponent } from './consulta-pedido/consulta-pedido.component';
-import {PagamentoComponent} from "./pagamento/pagamento/pagamento.component";
-import {PagamentoPixComponent} from "./pagamento/pagamento-pix/pagamento-pix.component";
-import {PagamentoCartaoComponent} from "./pagamento/pagamento-cartao/pagamento-cartao.component";
+import { ListarPedidoComponent } from './listar-pedido/listar-pedido.component';
+import { PagamentoComponent } from "./pagamento/pagamento/pagamento.component";
+import { PagamentoPixComponent } from "./pagamento/pagamento-pix/pagamento-pix.component";
+import { PagamentoCartaoComponent } from "./pagamento/pagamento-cartao/pagamento-cartao.component";
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -19,9 +20,10 @@ const routes: Routes = [
   { path: 'pedido', component: AprovarOrcamentoPedidoComponent },
   { path: 'pedido', component: PedidoOnlineComponent },
   { path: 'consulta-pedido', component: ConsultaPedidoComponent },
-  {path: 'pagamento', component: PagamentoComponent},
-  {path: 'pagamento-pix', component: PagamentoPixComponent},
-  {path: 'pagamento-cartao', component: PagamentoCartaoComponent},
+  { path: 'listar-pedido', component: ListarPedidoComponent },
+  { path: 'pagamento', component: PagamentoComponent},
+  { path: 'pagamento-pix', component: PagamentoPixComponent},
+  { path: 'pagamento-cartao', component: PagamentoCartaoComponent},
 ];
 
 @NgModule({
