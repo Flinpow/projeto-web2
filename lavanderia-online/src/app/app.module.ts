@@ -8,25 +8,31 @@ import { LoginComponent } from './login/login.component';
 import { AutoCadastroComponent } from './auto-cadastro/auto-cadastro.component';
 import { PedidoOnlineComponent } from './pedido-online/pedido-online.component';
 import { ConsultaPedidoComponent } from './consulta-pedido/consulta-pedido.component';
-import {AprovarOrcamentoPedidoComponent } from "./aprovar-orcamento-pedido/aprovar-orcamento-pedido.component";
+import { AprovarOrcamentoPedidoComponent } from "./aprovar-orcamento-pedido/aprovar-orcamento-pedido.component";
 import { ListarPedidosComponent } from './listar-pedidos/listar-pedidos.component';
+import { PagamentoComponent } from './pagamento/pagamento/pagamento.component';
+import { PagamentoPixComponent } from './pagamento/pagamento-pix/pagamento-pix.component';
+import { PagamentoCartaoComponent } from './pagamento/pagamento-cartao/pagamento-cartao.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeClienteComponent,
-    LoginComponent,
-    AutoCadastroComponent,
-    PedidoOnlineComponent,
-    ConsultaPedidoComponent,
-    AprovarOrcamentoPedidoComponent,
-    ListarPedidosComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomeClienteComponent,
+        LoginComponent,
+        AutoCadastroComponent,
+        PedidoOnlineComponent,
+        ConsultaPedidoComponent,
+        AprovarOrcamentoPedidoComponent,
+        ListarPedidosComponent,
+        PagamentoComponent,
+        PagamentoPixComponent,
+        PagamentoCartaoComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
