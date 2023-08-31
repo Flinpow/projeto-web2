@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PedidoService } from '../pedido/pedido.service';
-import { Orcamento } from '../pedido/pedido.service';
-import { Pedido } from '../pedido/pedido.service';
+import { PedidoService, Pedido, Orcamento } from '../pedido/services/pedido.service';
 
 
 

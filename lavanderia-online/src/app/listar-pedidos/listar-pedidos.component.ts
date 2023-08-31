@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PedidoService } from '../pedido/pedido.service';
+import { PedidoService } from '../pedido/services/pedido.service';
 
 @Component({
     selector: 'app-listar-pedidos',
