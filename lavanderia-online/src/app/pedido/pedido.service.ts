@@ -19,7 +19,13 @@ export class PedidoService {
     this.numeroPedidoAtual++;
     return novoPedido;
   }
+
+//  buscarPedidoPorId(id: string) : Pedido {
+    //implementar lógica  de negócio quando o sistema estiver com backend
+ // }
 }
+
+
 
 export interface Orcamento {
   valor: number;
@@ -28,6 +34,6 @@ export interface Orcamento {
 
 export interface Pedido {
   numero: string;
-  orcamento: Orcamento;
+  orcamento?: Orcamento;
   estado: string;
 }
