@@ -26,6 +26,7 @@ import { RejeitarOrcamentoPedidoComponent } from './rejeitar-orcamento-pedido/re
         PedidoOnlineComponent,
         ConsultaPedidoComponent,
         AprovarOrcamentoPedidoComponent,
+        RejeitarOrcamentoPedidoComponent,
         ListarPedidosComponent,
         PagamentoComponent,
         PagamentoPixComponent,
