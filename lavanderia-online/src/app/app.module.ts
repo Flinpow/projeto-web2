@@ -14,6 +14,7 @@ import { PagamentoComponent } from './pagamento/pagamento/pagamento.component';
 import { PagamentoPixComponent } from './pagamento/pagamento-pix/pagamento-pix.component';
 import { PagamentoCartaoComponent } from './pagamento/pagamento-cartao/pagamento-cartao.component';
 import { ListarPedidosFuncionarioComponent } from './listar-pedidos-funcionario/listar-pedidos-funcionario.component';
+import { FuncionarioHomeComponent } from './funcionario-home/funcionario-home.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +29,8 @@ import { ListarPedidosFuncionarioComponent } from './listar-pedidos-funcionario/
         PagamentoComponent,
         PagamentoPixComponent,
         PagamentoCartaoComponent,
-        ListarPedidosFuncionarioComponent
+        ListarPedidosFuncionarioComponent,
+        FuncionarioHomeComponent
     ],
     imports: [
         BrowserModule,
