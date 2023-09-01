@@ -10,6 +10,7 @@ import { ListarPedidosComponent } from './listar-pedidos/listar-pedidos.componen
 import { PagamentoComponent } from "./pagamento/pagamento/pagamento.component";
 import { PagamentoPixComponent } from "./pagamento/pagamento-pix/pagamento-pix.component";
 import { PagamentoCartaoComponent } from "./pagamento/pagamento-cartao/pagamento-cartao.component";
+import { FuncionarioHomeComponent } from './funcionario-home/funcionario-home.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -21,9 +22,10 @@ const routes: Routes = [
   { path: 'pedido', component: PedidoOnlineComponent },
   { path: 'consulta-pedido', component: ConsultaPedidoComponent },
   { path: 'listar-pedidos', component: ListarPedidosComponent },
-  { path: 'pagamento', component: PagamentoComponent},
-  { path: 'pagamento-pix', component: PagamentoPixComponent},
-  { path: 'pagamento-cartao', component: PagamentoCartaoComponent},
+  { path: 'pagamento', component: PagamentoComponent },
+  { path: 'pagamento-pix', component: PagamentoPixComponent },
+  { path: 'pagamento-cartao', component: PagamentoCartaoComponent },
+  { path: 'funcionario', component: FuncionarioHomeComponent }
 ];
 
 @NgModule({
