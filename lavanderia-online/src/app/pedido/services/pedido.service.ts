@@ -24,6 +24,17 @@ export class PedidoService {
     this.numeroPedidoAtual++;
     return novoPedido;
   }
+
+  rejeitarPedido(orcamento: Orcamento): Pedido {
+    const novoPedido: Pedido = {
+      numero: `PEDIDO${this.numeroPedidoAtual}`,
+      orcamento,
+      estado: 'Rejeitado'
+    };
+    this.pedidos.push(novoPedido);
+    this.numeroPedidoAtual++;
+    return novoPedido;
+  }
 // Implementação de CRUD conforme mostrado pelo professor no projeto de CRUD.
   listarTodos(): Pedido[] {
     const pedidos = localStorage[LS_CHAVE];
@@ -48,7 +59,7 @@ export class PedidoService {
   atualiza(pedido: Pedido) {
     //Obtém a lista completa
     const pedidos: Pedido [] = this.listarTodos();
-    // varre a lista de pessoas 
+    // varre a lista de pessoas
     // quando encontra a pessoa com o mesmo id, altera a lista
     pedidos.forEach((obj, index, objs) => {
       if(pedido.numero === obj.numero) {
@@ -61,7 +72,7 @@ export class PedidoService {
 
   remover(numero: string) {
     let pedidos: Pedido[] = this.listarTodos();
-    // filter() vai retornar todos da lista que forem 
+    // filter() vai retornar todos da lista que forem
     //diferentes do id passado para exclusão
     pedidos = pedidos.filter(pessoa => pessoa.numero !== numero);
 

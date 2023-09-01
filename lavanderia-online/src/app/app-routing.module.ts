@@ -5,6 +5,7 @@ import { HomeClienteComponent } from "./home-cliente/home-cliente.component";
 import { LoginComponent } from "./login/login.component";
 import { AutoCadastroComponent } from "./auto-cadastro/auto-cadastro.component";
 import { AprovarOrcamentoPedidoComponent } from "./aprovar-orcamento-pedido/aprovar-orcamento-pedido.component";
+import { RejeitarOrcamentoPedidoComponent } from './rejeitar-orcamento-pedido/rejeitar-orcamento-pedido.component';
 import { ConsultaPedidoComponent } from './consulta-pedido/consulta-pedido.component';
 import { ListarPedidosComponent } from './listar-pedidos/listar-pedidos.component';
 import { PagamentoComponent } from "./pagamento/pagamento/pagamento.component";
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'cadastro', component: AutoCadastroComponent },
   { path: 'home', component: HomeClienteComponent },
   { path: 'pedido', component: PedidoOnlineComponent },
-  { path: 'pedido', component: AprovarOrcamentoPedidoComponent },
+  { path: 'aprovar-orcamento-pedido', component: AprovarOrcamentoPedidoComponent },
+  { path: 'rejeitar-orcamento-pedido', component: RejeitarOrcamentoPedidoComponent },
   { path: 'pedido', component: PedidoOnlineComponent },
   { path: 'consulta-pedido', component: ConsultaPedidoComponent },
   { path: 'listar-pedidos', component: ListarPedidosComponent },
