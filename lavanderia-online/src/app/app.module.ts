@@ -13,6 +13,7 @@ import { ListarPedidosComponent } from './listar-pedidos/listar-pedidos.componen
 import { PagamentoComponent } from './pagamento/pagamento/pagamento.component';
 import { PagamentoPixComponent } from './pagamento/pagamento-pix/pagamento-pix.component';
 import { PagamentoCartaoComponent } from './pagamento/pagamento-cartao/pagamento-cartao.component';
+import { ListarPedidosFuncionarioComponent } from './listar-pedidos-funcionario/listar-pedidos-funcionario.component';
 
 @NgModule({
     declarations: [
@@ -26,7 +27,8 @@ import { PagamentoCartaoComponent } from './pagamento/pagamento-cartao/pagamento
         ListarPedidosComponent,
         PagamentoComponent,
         PagamentoPixComponent,
-        PagamentoCartaoComponent
+        PagamentoCartaoComponent,
+        ListarPedidosFuncionarioComponent
     ],
     imports: [
         BrowserModule,

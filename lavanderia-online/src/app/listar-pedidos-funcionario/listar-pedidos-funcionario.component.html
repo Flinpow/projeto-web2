@@ -1,0 +1,92 @@
+<div class="container text-center">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+            <h1>Pedidos</h1>
+        </div>
+    </div><br>
+    <div class="row justify-content-between">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <label for="incidentTypeId" class="form-label">Status</label>
+            <select class="form-select form-control" id="incidentTypeId" name="incidentTypeId"><!-- [(ngModel)]="statusFilter"-->                    <option value="">Selecionar...</option>
+                <option value="created">Criado</option>
+                <option value="open">Em aberto</option>
+                <option value="rejected">Rejeitado</option>
+                <option value="canceled">Cancelado</option>
+                <option value="collected">Recolhido</option>
+                <option value="waiting_payment">Aguardando pagamento</option>
+                <option value="paid">Pago</option>
+                <option value="finished">Finalizado</option>
+            </select>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="row g-3 d-flex justify-content-between">
+                <div class="col-4 form-group">
+                    <button #todayButton type="button" class="btn btn-outline-secondary">Pedidos de hoje</button><!-- (click)="filterToday()"-->
+                </div>
+                <div class="col-4 form-group">
+                    <button #todayPeriod type="button" class="btn btn-outline-secondary">Período</button><!-- (click)="filterPeriod()"-->
+                </div>
+                <div class="col-4 form-group">
+                    <button #todayAll type="button" class="btn btn-secondary">Todos os pedidos</button><!-- (click)="filterAll()"-->
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="row g-5">
+                <div class="col-5 form-group">
+                    <label for="startDate">Data inícial</label>
+                    <input type="date" class="form-control" id="startDate" name="startDate"><!--(ngModelChange)="setInitialDate($event)" [(ngModel)]="startDate" -->
+                </div>
+                <div class="col-5 form-group">
+                    <label for="endDate">Data final</label>
+                    <input type="date" class="form-control" id="endDate" name="endDate"><!-- (ngModelChange)="setEndDate($event)" [(ngModel)]="endDate"-->
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row justify-content-start">
+        <div class="col-1">
+            <button type="button" class="btn btn-info"><i class='fa fa-search'></i>Filtrar</button><!-- (click)="filterOrders()"-->
+        </div>
+        <div class="col-1">
+            <button type="button" class="btn btn-danger"><i class='fa fa-cancel'></i>Cancelar</button><!-- *ngIf="filtering" (click)="cancelFilter()"-->
+        </div>
+    </div><br>
+    <table class="table-auto w-full text-left whitespace-no-wrap">
+        <thead>
+            <tr>
+                <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">#Nº pedido</th>
+                <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Data</th>
+                <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Valor</th>
+                <th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="px-4 py-3">1</td>
+                <td class="px-4 py-3">18/08/2023</td>
+                <td class="px-4 py-3">R$30,00</td>
+                <td class="w-10 text-center"><input name="plan" type="radio"></td>
+            </tr>
+            <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3">2</td>
+                <td class="border-t-2 border-gray-200 px-4 py-3">18/08/2023</td>
+                <td class="border-t-2 border-gray-200 px-4 py-3">R$50,00</td>
+                <td class="border-t-2 border-gray-200 w-10 text-center"><input name="plan" type="radio"></td>
+            </tr>
+            <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3">3</td>
+                <td class="border-t-2 border-gray-200 px-4 py-3">18/08/2023</td>
+                <td class="border-t-2 border-gray-200 px-4 py-3">R$43,00</td>
+                <td class="border-t-2 border-gray-200 w-10 text-center"><input name="plan" type="radio"></td>
+            </tr>
+            <tr>
+                <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">4</td>
+                <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">18/08/2023</td>
+                <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">R$88,00</td>
+                <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center"><input name="plan" type="radio"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+</div>
