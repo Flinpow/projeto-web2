@@ -15,6 +15,7 @@ import { PagamentoPixComponent } from './pagamento/pagamento-pix/pagamento-pix.c
 import { PagamentoCartaoComponent } from './pagamento/pagamento-cartao/pagamento-cartao.component';
 import { ListarPedidosFuncionarioComponent } from './listar-pedidos-funcionario/listar-pedidos-funcionario.component';
 import { FuncionarioHomeComponent } from './funcionario-home/funcionario-home.component';
+import { PedidosModule } from './pedidos/pedidos.module';
 
 @NgModule({
     declarations: [
@@ -34,7 +35,8 @@ import { FuncionarioHomeComponent } from './funcionario-home/funcionario-home.co
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        PedidosModule
     ],
     providers: [],
     bootstrap: [AppComponent]
