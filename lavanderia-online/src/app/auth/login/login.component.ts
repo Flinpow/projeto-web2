@@ -25,11 +25,14 @@ export class LoginComponent implements OnInit {
   entrar(): void {
     if (this.formUser.form.valid) {
       let logado = true;
-      this.authService.logar(this.usuario.email, this.usuario.senha);
-      if (logado) {
-        this.router.navigate(['/login']);
+      // this.authService.logar(this.usuario.email, this.usuario.senha);
+      if (this.usuario.email == "funcionario")
+        this.router.navigate(['/home-funcionario']);
+      else if (this.usuario.email === "cliente")
+        this.router.navigate(['/home-cliente']);
+      else {
+        this.mostrarErro = true;
       }
-      this.mostrarErro = true;
     }
   }
 }
