@@ -12,17 +12,17 @@ import { PagamentoPixComponent } from "./pagamento/pagamento-pix/pagamento-pix.c
 import { PagamentoCartaoComponent } from "./pagamento/pagamento-cartao/pagamento-cartao.component";
 
 const routes: Routes = [
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
-    { path: '', component: LoginComponent },
     { path: 'cadastro', component: AutoCadastroComponent },
     { path: 'home', component: HomeClienteComponent },
-    { path: 'pedido', component: CriarPedidoComponent },
-    { path: 'pedido', component: AprovarOrcamentoPedidoComponent },
-    { path: 'consulta-pedido', component: ConsultaPedidoComponent },
-    { path: 'listar-pedidos', component: ListarPedidosComponent },
-    { path: 'pagamento-home', component: PagamentoHomeComponent },
-    { path: 'pagamento-pix', component: PagamentoPixComponent },
-    { path: 'pagamento-cartao', component: PagamentoCartaoComponent },
+    { path: 'pedidos', component: ListarPedidosComponent },
+    { path: 'pedidos/novo', component: CriarPedidoComponent },
+    { path: 'pedidos/aprovar', component: AprovarOrcamentoPedidoComponent },
+    { path: 'pedidos/consultar/:id', component: ConsultaPedidoComponent },
+    { path: 'pagamento', component: PagamentoHomeComponent },
+    { path: 'pagamento/pix', component: PagamentoPixComponent },
+    { path: 'pagamento/cartao', component: PagamentoCartaoComponent },
 ];
 
 @NgModule({
